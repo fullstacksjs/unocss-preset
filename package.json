@@ -15,10 +15,14 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "lint": "eslint . --fix"
   },
   "devDependencies": {
+    "@fullstacksjs/eslint-config": "12.1.1",
     "@fullstacksjs/tsconfig": "2.0.0",
+    "eslint": "9.25.1",
+    "prettier": "3.5.3",
     "typescript": "5.8.3"
   }
 }
