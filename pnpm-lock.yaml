@@ -1,0 +1,36 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    devDependencies:
+      '@fullstacksjs/tsconfig':
+        specifier: 2.0.0
+        version: 2.0.0(typescript@5.8.3)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+packages:
+
+  '@fullstacksjs/tsconfig@2.0.0':
+    resolution: {integrity: sha512-/blIYWSnxRO4B+dp5PCcFSRVyg+13pU+mJ5ZJxSHsyynvQt4E70XfR1n5Q4q+fMJP+XiZAMbChmHWrBg/8P5VQ==}
+    peerDependencies:
+      typescript: '>=5'
+
+  typescript@5.8.3:
+    resolution: {integrity: sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
+snapshots:
+
+  '@fullstacksjs/tsconfig@2.0.0(typescript@5.8.3)':
+    dependencies:
+      typescript: 5.8.3
+
+  typescript@5.8.3: {}

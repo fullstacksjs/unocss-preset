@@ -14,5 +14,11 @@
   "author": "Alireza Safaeirad <frontendmonster@gmail.com>",
   "license": "MIT",
   "type": "module",
-  "scripts": {}
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@fullstacksjs/tsconfig": "2.0.0",
+    "typescript": "5.8.3"
+  }
 }
