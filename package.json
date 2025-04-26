@@ -14,11 +14,15 @@
   "author": "Alireza Safaeirad <frontendmonster@gmail.com>",
   "license": "MIT",
   "type": "module",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "lint": "eslint . --fix"
+    "lint": "eslint . --fix",
+    "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
+    "ci": "pnpm lint && pnpm build && pnpm check-exports"
   },
   "devDependencies": {
+    "@arethetypeswrong/cli": "0.17.4",
     "@fullstacksjs/eslint-config": "12.1.1",
     "@fullstacksjs/tsconfig": "2.0.0",
     "eslint": "9.25.1",
