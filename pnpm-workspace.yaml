@@ -1,1 +1,4 @@
-savePrefix: ""
+savePrefix: ''
+
+onlyBuiltDependencies:
+  - rolldown

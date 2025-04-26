@@ -14,9 +14,21 @@
   "author": "Alireza Safaeirad <frontendmonster@gmail.com>",
   "license": "MIT",
   "type": "module",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "main": "dist/index.js",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./dist/index.js",
+      "default": "./dist/index.cjs"
+    }
+  },
   "scripts": {
-    "build": "tsc",
+    "build": "tsdown",
     "lint": "eslint . --fix",
     "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
     "ci": "pnpm lint && pnpm build && pnpm check-exports"
@@ -27,6 +39,7 @@
     "@fullstacksjs/tsconfig": "2.0.0",
     "eslint": "9.25.1",
     "prettier": "3.5.3",
+    "tsdown": "0.9.8",
     "typescript": "5.8.3"
   }
 }
